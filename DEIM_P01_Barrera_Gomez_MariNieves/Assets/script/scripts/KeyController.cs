@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class KeyController : MonoBehaviour
 {
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Key"))
+        print("frunciona");
+        if (collision.gameObject.CompareTag("Player"))
+
         {
             Destroy(gameObject);
         }
     }
+
 }
