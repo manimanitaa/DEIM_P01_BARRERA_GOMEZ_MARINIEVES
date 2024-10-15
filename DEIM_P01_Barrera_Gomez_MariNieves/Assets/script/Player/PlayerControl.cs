@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rigidbody;
+    [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private float speed;
 
@@ -16,56 +17,92 @@ public class PlayerControl : MonoBehaviour
     [Tooltip("Referencia al sprite renderer del personaje")] 
     [SerializeField] private SpriteRenderer spriteRenderer;
 
-    public int vidas;
     [SerializeField] public GameObject[]hearts;
 
-    [Tooltip("fuerza caida del eprsonaje")] private float fallForce;
+    [Tooltip("tiwmpo máximoq ue el jugador puede mantener pulsado la tecla desalto")]
+    [SerializeField] private float maxJumpTime;
+
+    [Tooltip("fuerza caida del eprsonaje")]
+    private float fallForce;
+
+    public int vidas;
+
+    private float jumptime;
+
+    private bool jumping;
 
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("se ejecuta Stat");
-
     }
 
     // Update is called once per frame
    
     void Update()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))    //comprueba que esta pulsando la tecla "D"
         {
-            rigidbody.AddForce(Vector2.right * speed);
+            rb.AddForce(Vector2.right * speed);   // añade fuerza hacia la drch
 
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = true;     // gira al personaje cuando cambia de dirección
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))    // comprueba que estas tocando la tecla "A"
         {
-            rigidbody.AddForce(Vector2.left * speed);
+            rb.AddForce(Vector2.left * speed);    // añade fuerza hacia la izq
 
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = false;     // gira al personaje cuando cambia de dirección
         }
         else 
         {
             //print("funciona");
             //rigidbody.velocity.Set(0 , rigidbody.velocity.y);
 
-            rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
+            rb.velocity = new Vector2(0, rb.velocity.y);
 
             //rigidbody.velocity= Vector2.zero;
         }
 
+        // EMPIEZA EL CODIGO DE SALTO
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            rigidbody.AddForce(Vector2.up * FuerzaSalto);
+            // el personaje inicia el salto
+            jumping = true;
+
+            jumptime = 0;
+
+            Debug.Log("inicio del salto");
+
         }
 
-        animator.SetBool("walking", rigidbody.velocity.x != 0);
-
-        if (rigidbody.velocity.y < 0)
+        if ((Input.GetKeyUp(KeyCode.W)) || (jumptime >= maxJumpTime))
         {
-            rigidbody.AddForce(Vector2.down * fallForce);
+            
+            // el personaje finaliza el salto
+            jumping = false;
+            Debug.Log("fin de salto");
+
+        }
+
+        if (jumping)
+        {
+            //rb.AddForce(Vector2.up * FuerzaSalto);
+
+            rb.velocity = (Vector2.up * FuerzaSalto);
+
+            jumptime += Time.deltaTime; 
+        }
+
+        // TERMINA EL SALTO
+
+
+        animator.SetBool("walking", rb.velocity.x != 0);
+
+        if (rb.velocity.y < 0)
+        {
+            rb.AddForce(Vector2.down * fallForce);
         }
 
 
@@ -84,8 +121,6 @@ public class PlayerControl : MonoBehaviour
             hearts[2].gameObject.SetActive(false);
         }
 
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -103,7 +138,6 @@ public class PlayerControl : MonoBehaviour
             hearts[1].gameObject.SetActive(true);
             hearts[2].gameObject.SetActive(true);
         }
-
 
     }
 
