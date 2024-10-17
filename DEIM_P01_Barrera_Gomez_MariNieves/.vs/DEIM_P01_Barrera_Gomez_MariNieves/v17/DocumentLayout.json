@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|c:\\users\\param\\desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\deim_p01_barrera_gomez_marinieves\\assets\\script\\levelpiece\\levelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\levelpiece\\levelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|c:\\users\\param\\desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\deim_p01_barrera_gomez_marinieves\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\downwell\\deim_p01_barrera_gomez_marinieves\\assets\\script\\levelpiece\\levelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\levelpiece\\levelgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\scripts\\lockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|c:\\users\\user\\onedrive\\desktop\\downwell\\deim_p01_barrera_gomez_marinieves\\assets\\script\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\scripts\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scripts\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\scripts\\lockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scripts\\lockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\scripts\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scripts\\keycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\assets\\script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DED6388-2463-ABAB-91AC-AB9F5A8A0B4B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "COIN.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\COIN.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\scripts\\COIN.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\COIN.cs",
+              "RelativeToolTip": "Assets\\script\\scripts\\COIN.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:06:50.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LevelGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\levelPiece\\LevelGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\levelPiece\\LevelGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\script\\levelPiece\\LevelGenerator.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\levelPiece\\LevelGenerator.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\levelPiece\\LevelGenerator.cs",
               "RelativeToolTip": "Assets\\script\\levelPiece\\LevelGenerator.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T07:50:14.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\script\\GameManager.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\GameManager.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\GameManager.cs",
               "RelativeToolTip": "Assets\\script\\GameManager.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T10:25:57.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PlayerInventory.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerInventory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerInventory.cs",
               "RelativeDocumentMoniker": "Assets\\script\\Player\\PlayerInventory.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerInventory.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerInventory.cs",
               "RelativeToolTip": "Assets\\script\\Player\\PlayerInventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:14:24.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LockController.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\LockController.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\scripts\\LockController.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\LockController.cs",
-              "RelativeToolTip": "Assets\\script\\scripts\\LockController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:22:37.268Z"
+              "WhenOpened": "2024-10-01T09:14:24.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "KeyController.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\KeyController.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\scripts\\KeyController.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\KeyController.cs",
-              "RelativeToolTip": "Assets\\script\\scripts\\KeyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "LockController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\LockController.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\scripts\\LockController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\LockController.cs",
+              "RelativeToolTip": "Assets\\script\\scripts\\LockController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:56:13.218Z"
+              "WhenOpened": "2024-09-30T08:22:37.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerControl.cs",
-              "DocumentMoniker": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerControl.cs",
-              "RelativeDocumentMoniker": "Assets\\script\\Player\\PlayerControl.cs",
-              "ToolTip": "C:\\Users\\param\\Desktop\\cosas de mani\\unity mani\\deim_p01_barrera_gomez_marinieves\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerControl.cs",
-              "RelativeToolTip": "Assets\\script\\Player\\PlayerControl.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "KeyController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\KeyController.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\scripts\\KeyController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\scripts\\KeyController.cs",
+              "RelativeToolTip": "Assets\\script\\scripts\\KeyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T10:54:21.597Z"
+              "WhenOpened": "2024-09-30T08:56:13.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\script\\Player\\PlayerControl.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\DOWNWELL\\DEIM_P01_Barrera_Gomez_MariNieves\\Assets\\script\\Player\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\script\\Player\\PlayerControl.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAgwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T10:54:21.597Z",
+              "EditorCaption": ""
             }
           ]
         }
