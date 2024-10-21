@@ -6,7 +6,7 @@ public class KeyController : MonoBehaviour
 {
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        print("frunciona");
+       
         if (collision.gameObject.CompareTag("Player"))
 
         {

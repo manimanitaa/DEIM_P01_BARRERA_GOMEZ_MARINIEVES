@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using System;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class PlayerControl : MonoBehaviour
 
     private bool jumping;
 
+    public event EventHandler MuerteJugador;
 
     // Start is called before the first frame update
     void Start()
@@ -120,6 +122,8 @@ public class PlayerControl : MonoBehaviour
         {
             hearts[2].gameObject.SetActive(false);
         }
+
+        MuerteJugador? . Invoke (this, EventArgs.Empty);
 
     }
 

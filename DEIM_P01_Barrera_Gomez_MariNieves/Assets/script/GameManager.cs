@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         PanelPausa();
+
+       
     }
 
     public void BotonContinuar()
