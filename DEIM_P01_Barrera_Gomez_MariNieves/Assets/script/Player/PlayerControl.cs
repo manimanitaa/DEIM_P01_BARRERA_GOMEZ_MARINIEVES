@@ -122,9 +122,6 @@ public class PlayerControl : MonoBehaviour
         {
             hearts[2].gameObject.SetActive(false);
         }
-
-        MuerteJugador? . Invoke (this, EventArgs.Empty);
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -136,11 +133,7 @@ public class PlayerControl : MonoBehaviour
 
         if (vidas == 0)
         {
-            vidas = 3;
-
-            hearts[0].gameObject.SetActive(true);
-            hearts[1].gameObject.SetActive(true);
-            hearts[2].gameObject.SetActive(true);
+           MuerteJugador.Invoke (this, EventArgs.Empty);
         }
 
     }

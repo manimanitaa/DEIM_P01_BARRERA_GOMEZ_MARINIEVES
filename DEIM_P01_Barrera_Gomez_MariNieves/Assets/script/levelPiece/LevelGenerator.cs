@@ -15,7 +15,7 @@ public class LevelGenerator : MonoBehaviour
 
     [SerializeField] private GameObject[] startPieces;
 
-    [SerializeField] private List<GameObject> piecesToUse;
+    private List<GameObject> piecesToUse;
 
     // Start is called before the first frame update
     void Start()
