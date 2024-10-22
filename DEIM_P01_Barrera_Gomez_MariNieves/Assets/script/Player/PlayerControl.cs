@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 using System;
+using Unity.VisualScripting;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -15,13 +16,17 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
-    [Tooltip("Referencia al sprite renderer del personaje")] 
+    [Tooltip("Referencia al sprite renderer del personaje")]
     [SerializeField] private SpriteRenderer spriteRenderer;
 
-    [SerializeField] public GameObject[]hearts;
+    [SerializeField] public GameObject[] hearts;
 
     [Tooltip("tiwmpo máximoq ue el jugador puede mantener pulsado la tecla desalto")]
     [SerializeField] private float maxJumpTime;
+
+    [SerializeField] private float distancia;
+    [SerializeField] private Transform controladorSuelo;
+    [SerializeField] private LayerMask layerMaskSalto;
 
     [Tooltip("fuerza caida del eprsonaje")]
     private float fallForce;
@@ -41,7 +46,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     // Update is called once per frame
-   
+
     void Update()
     {
         if (Input.GetKey(KeyCode.D))    //comprueba que esta pulsando la tecla "D"
@@ -56,7 +61,7 @@ public class PlayerControl : MonoBehaviour
 
             spriteRenderer.flipX = false;     // gira al personaje cuando cambia de dirección
         }
-        else 
+        else
         {
             //print("funciona");
             //rigidbody.velocity.Set(0 , rigidbody.velocity.y);
@@ -70,18 +75,20 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            // el personaje inicia el salto
-            jumping = true;
+            RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
+            if (informacionSuelo == true)
+            {
+                jumping = true;
 
-            jumptime = 0;
+                jumptime = 0;
 
-            Debug.Log("inicio del salto");
-
+                Debug.Log("inicio del salto");
+            }
         }
 
         if ((Input.GetKeyUp(KeyCode.W)) || (jumptime >= maxJumpTime))
         {
-            
+
             // el personaje finaliza el salto
             jumping = false;
             Debug.Log("fin de salto");
@@ -94,7 +101,7 @@ public class PlayerControl : MonoBehaviour
 
             rb.velocity = (Vector2.up * FuerzaSalto);
 
-            jumptime += Time.deltaTime; 
+            jumptime += Time.deltaTime;
         }
 
         // TERMINA EL SALTO
@@ -108,34 +115,62 @@ public class PlayerControl : MonoBehaviour
         }
 
 
-        if ( vidas < 1)
+        if (vidas == 0)
         {
             hearts[0].gameObject.SetActive(false);
-        }
-
-        if (vidas < 2)
-        {
             hearts[1].gameObject.SetActive(false);
-        }
-
-        if (vidas < 3)
-        {
             hearts[2].gameObject.SetActive(false);
         }
+
+        if (vidas == 1)
+        {
+            hearts[0].gameObject.SetActive(true);
+            hearts[1].gameObject.SetActive(false);
+            hearts[2].gameObject.SetActive(false);
+        }
+        if (vidas == 2)
+        {
+            hearts[0].gameObject.SetActive(true);
+            hearts[1].gameObject.SetActive(true);
+            hearts[2].gameObject.SetActive(false);
+        }
+        if (vidas == 3)
+        {
+            hearts[0].gameObject.SetActive(true);
+            hearts[1].gameObject.SetActive(true);
+            hearts[2].gameObject.SetActive(true);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (collision.gameObject.CompareTag("enemy"))
 
+        if (collision.gameObject.CompareTag("enemy"))
+        {
             vidas -= 1;
+        }
+
+        if (collision.gameObject.CompareTag("curacion"))
+        {
+            //print("funciona");
+
+            vidas += 1;
+        }
 
         if (vidas == 0)
         {
-           MuerteJugador.Invoke (this, EventArgs.Empty);
+            MuerteJugador.Invoke(this, EventArgs.Empty);
         }
 
-    }
 
+
+
+
+    }
 }
