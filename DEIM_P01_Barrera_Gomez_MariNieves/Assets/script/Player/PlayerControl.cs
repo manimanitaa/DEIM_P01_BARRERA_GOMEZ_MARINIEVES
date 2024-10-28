@@ -37,12 +37,17 @@ public class PlayerControl : MonoBehaviour
 
     private bool jumping;
 
+    public int saltosMaximos;
+    private int saltosRestantes;
+
     public event EventHandler MuerteJugador;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("se ejecuta Stat");
+
+        saltosRestantes = saltosMaximos;
     }
 
     // Update is called once per frame
@@ -73,8 +78,11 @@ public class PlayerControl : MonoBehaviour
 
         // EMPIEZA EL CODIGO DE SALTO
 
-        if (Input.GetKeyDown(KeyCode.W))
+        
+        if (Input.GetKeyDown(KeyCode.W)&& saltosRestantes>0)
         {
+            
+
             RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
             if (informacionSuelo == true)
             {
@@ -97,6 +105,12 @@ public class PlayerControl : MonoBehaviour
 
         if (jumping)
         {
+
+            saltosRestantes--;
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
+
+            saltosRestantes = saltosMaximos;
+
             //rb.AddForce(Vector2.up * FuerzaSalto);
 
             rb.velocity = (Vector2.up * FuerzaSalto);
@@ -147,6 +161,8 @@ public class PlayerControl : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
     }
+
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
