@@ -77,18 +77,26 @@ public class PlayerControl : MonoBehaviour
         }
 
         // EMPIEZA EL CODIGO DE SALTO
-
-        
-        if (Input.GetKeyDown(KeyCode.W)&& saltosRestantes>0)
+        if(Input.GetKeyDown(KeyCode.W)&& EstaEnAire()&& saltosRestantes > 0)
         {
-            
+            jumping = true;
 
+            jumptime = 0;
+
+            saltosRestantes = 0;
+
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {           
             RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
             if (informacionSuelo == true)
             {
                 jumping = true;
 
                 jumptime = 0;
+
+                saltosRestantes = 1;
 
                 Debug.Log("inicio del salto");
             }
@@ -105,12 +113,6 @@ public class PlayerControl : MonoBehaviour
 
         if (jumping)
         {
-
-            saltosRestantes--;
-            rb.velocity = new Vector2(rb.velocity.x, 0f);
-
-            saltosRestantes = saltosMaximos;
-
             //rb.AddForce(Vector2.up * FuerzaSalto);
 
             rb.velocity = (Vector2.up * FuerzaSalto);
@@ -123,9 +125,15 @@ public class PlayerControl : MonoBehaviour
 
         animator.SetBool("walking", rb.velocity.x != 0);
 
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0)    // el jugador esta cayendo
         {
             rb.AddForce(Vector2.down * fallForce);
+
+            RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
+            if (informacionSuelo == true)
+            {
+                saltosRestantes = 1;
+            }
         }
 
 
@@ -162,7 +170,12 @@ public class PlayerControl : MonoBehaviour
         Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
     }
 
-    
+    private bool EstaEnAire()
+    {
+        RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
+
+        return (informacionSuelo.collider == null);
+    } 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

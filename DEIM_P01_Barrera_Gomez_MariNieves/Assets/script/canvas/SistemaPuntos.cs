@@ -22,18 +22,15 @@ public class SistemaPuntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        puntos += Time.deltaTime;
-        textMesh.text = puntos.ToString("0");
+        
     }
 
-    private void MasPunto(float puntosEntrada)
+    public void SumarPuntos(float puntosEntrada)
     {
-
         puntos += puntosEntrada;
+        textMesh.text = puntos.ToString("0");
+        
     }
 
-    internal void SumarPuntos(float cantidadPuntos)
-    {
-        throw new NotImplementedException();
-    }
+    
 }

@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class BLOQUES : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public int vidas;
+
+
+    private void Start()
+    {
+        vidas = 2;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bala"))
         {
-
-                       Destroy(gameObject);
+            vidas -= 1;
+            Destroy(collision.gameObject);
+            if (vidas <= 0)
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
+
+    
 
