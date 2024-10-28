@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4940567761783999804}
   - component: {fileID: 1445880148064141261}
   - component: {fileID: 4760562842152421373}
+  - component: {fileID: 5971880963731335656}
   - component: {fileID: 4988982606380735213}
   m_Layer: 0
   m_Name: PERSIGUE
@@ -131,6 +132,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3333334, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &5971880963731335656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2156835900868523660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a58ccab00ed5c54c96362be8d0d048f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTrf: {fileID: 0}
+  followRange: 0
+  followLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &4988982606380735213
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,8 +24,8 @@ public class Lados : MonoBehaviour
         rb= GetComponent<Rigidbody2D>();
     }
 
-
-     public void TomarDanio(float danio)
+    
+    public void TomarDanio(float danio)
     {
 
         vida -= danio;
