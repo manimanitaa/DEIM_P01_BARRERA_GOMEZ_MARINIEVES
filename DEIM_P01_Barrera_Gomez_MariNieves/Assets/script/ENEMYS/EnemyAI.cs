@@ -30,7 +30,9 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        state = EnemyState.Follow;                                                                                                                                                         
+        state = EnemyState.Follow;
+
+        playerTrf = GameObject.Find("player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -47,7 +49,15 @@ public class EnemyAI : MonoBehaviour
                 switch (state) 
                 {
                     case EnemyState.Stopped:
-                        
+
+                        if (InFollowRange())
+                        {
+                            GoToFollow();
+                        }
+                        else
+                        {
+                            GoToStopped();
+                        }
                         break;
 
                     case EnemyState.Mov:
@@ -73,6 +83,11 @@ public class EnemyAI : MonoBehaviour
 
                     case EnemyState.Attack:
 
+                        if (!InAttakRange())
+                        {
+                            GoToFollow();
+                        }
+
                         break;
 
                 }
@@ -89,6 +104,12 @@ public class EnemyAI : MonoBehaviour
     {
         state = EnemyState.Stopped;
         pathAgent.canMove = false;
+    }
+
+    private void GoToFollow()
+    {
+        state = EnemyState.Follow;
+        pathAgent.canMove = true;
     }
 
     private void GoToAttack()

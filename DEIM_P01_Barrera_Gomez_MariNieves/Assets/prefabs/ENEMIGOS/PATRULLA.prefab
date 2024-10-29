@@ -41,7 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2238293219655115170}
   - component: {fileID: 2503893678077121649}
-  - component: {fileID: 3076969673231981336}
+  - component: {fileID: -5899868597024420975}
+  - component: {fileID: 1672600314331631406}
   - component: {fileID: 6572399453000551665}
   - component: {fileID: 5235614688879004999}
   m_Layer: 0
@@ -119,7 +120,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3076969673231981336
+--- !u!114 &-5899868597024420975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283956717465621674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6387a12b99730764a87a98b1c153a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
+  moneda: {fileID: 6134846096241301046, guid: b4413051b8e9d62429c7668cf5283ddf, type: 3}
+--- !u!114 &1672600314331631406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,11 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bde9ad7e562f3f4096c6da47e9ff58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 3
-  moneda: {fileID: 6134846096241301046, guid: b4413051b8e9d62429c7668cf5283ddf, type: 3}
   velocidad: 3
   controladorSuelo: {fileID: 7484170686155554143}
-  distancia: 1
+  distancia: 1.12
 --- !u!61 &6572399453000551665
 BoxCollider2D:
   m_ObjectHideFlags: 0

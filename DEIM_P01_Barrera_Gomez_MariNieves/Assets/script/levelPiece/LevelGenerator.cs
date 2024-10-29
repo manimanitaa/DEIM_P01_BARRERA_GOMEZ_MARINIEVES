@@ -55,6 +55,8 @@ public class LevelGenerator : MonoBehaviour
             piecesToUse.RemoveAt(pieceIndex);   
         }
         Instantiate(endPieces[Random.Range(0, endPieces.Length)], new Vector3(0, -levelHeight,0), Quaternion.identity, transform);
+
+        AstarPath.active.Scan();
     }
 
     // Update is called once per frame

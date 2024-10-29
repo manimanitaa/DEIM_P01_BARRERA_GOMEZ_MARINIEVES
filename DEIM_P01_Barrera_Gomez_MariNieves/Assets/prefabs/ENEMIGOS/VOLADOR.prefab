@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 8394200565995108593}
   - component: {fileID: 6205582158069190873}
   - component: {fileID: 1822579194909932343}
+  - component: {fileID: 8684572466748975420}
   - component: {fileID: 3198273390283960441}
   - component: {fileID: 5417769647625442459}
   m_Layer: 0
@@ -164,6 +165,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3333334, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &8684572466748975420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535665823814715795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6387a12b99730764a87a98b1c153a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
+  moneda: {fileID: 6134846096241301046, guid: b4413051b8e9d62429c7668cf5283ddf, type: 3}
 --- !u!114 &3198273390283960441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +198,7 @@ MonoBehaviour:
   distancia: 4
   layerMaskMovimiento:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 16
 --- !u!50 &5417769647625442459
 Rigidbody2D:
   serializedVersion: 4

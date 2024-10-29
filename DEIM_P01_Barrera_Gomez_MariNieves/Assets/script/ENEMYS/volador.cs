@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class volador : MonoBehaviour
 {
-    [SerializeField] private float vida;
-
-    [SerializeField] GameObject moneda;
 
     [SerializeField] private float velocidad;
 
@@ -26,23 +23,6 @@ public class volador : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-
-    public void TomarDanio(float danio)
-    {
-
-        vida -= danio;
-        if (vida <= 0)
-        {
-            Muerte();
-        }
-
-    }
-
-    private void Muerte()
-    {
-        Instantiate(moneda, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-    }
 
     private void FixedUpdate()
     {
