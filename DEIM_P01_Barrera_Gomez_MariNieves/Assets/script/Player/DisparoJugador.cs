@@ -10,21 +10,37 @@ public class DisparoJugador : MonoBehaviour
 
     [SerializeField] private float tiempoEntreDisparos;
 
+    [SerializeField] private PlayerControl playerControl;
+
     private float tiempoSiguienteDisparo;
 
-    private void Update()
+    
+      private void Update()
     {
         if (Input.GetButtonDown("Fire1")&& Time.time >= tiempoSiguienteDisparo)
         {
             //Disparar
 
-            Disparar();
-            tiempoSiguienteDisparo = Time.time + tiempoEntreDisparos;
+
+            if (playerControl.CantidadBalas > 0) Disparar();
+            else
+            {
+                //NO TIENE BALAS
+                playerControl.contadorBalas.color = Color.red;
+                playerControl.contadorBalas.fontSize = 72;
+            }
+            
+
+
+
+
+                tiempoSiguienteDisparo = Time.time + tiempoEntreDisparos;
         }
     }
 
     private void Disparar()
     {
         Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+        playerControl.CantidadBalas -= 1;
     }
 }

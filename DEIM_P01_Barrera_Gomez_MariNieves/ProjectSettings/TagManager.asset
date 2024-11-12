@@ -8,6 +8,7 @@ TagManager:
   - llave
   - curacion
   - Bala
+  - +Bala
   layers:
   - Default
   - TransparentFX

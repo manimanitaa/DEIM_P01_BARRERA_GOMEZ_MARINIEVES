@@ -8,9 +8,10 @@ using Unity.VisualScripting;
 
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb;
+    [Tooltip("Referencia a los datos de configuracion del personaje")]
+    [SerializeField] private PlayerConfigData playerConfigData;
 
-    [SerializeField] private float speed;
+    [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private float FuerzaSalto;
 
@@ -21,12 +22,17 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] public GameObject[] hearts;
 
-    [Tooltip("tiwmpo máximoq ue el jugador puede mantener pulsado la tecla desalto")]
+    [Tooltip("tiempo máximo que el jugador puede mantener pulsado la tecla desalto")]
     [SerializeField] private float maxJumpTime;
 
     [SerializeField] private float distancia;
-    [SerializeField] private Transform controladorSuelo;
+    [SerializeField] private Transform controladorSueloIzquierdo;
+    [SerializeField] private Transform controladorSueloDerecho;
     [SerializeField] private LayerMask layerMaskSalto;
+
+    [SerializeField] public TMPro.TextMeshProUGUI contadorBalas;
+
+    public int CantidadBalas = 0;
 
     [Tooltip("fuerza caida del eprsonaje")]
     private float fallForce;
@@ -48,6 +54,19 @@ public class PlayerControl : MonoBehaviour
         Debug.Log("se ejecuta Stat");
 
         saltosRestantes = saltosMaximos;
+
+        playerConfigData.MovementSpeed = 3;
+
+        animator.runtimeAnimatorController = playerConfigData.animatorController;
+    }
+
+
+    private void FixedUpdate()
+    {
+        //vuelve el contador a su estilo normal
+        contadorBalas.color = Color.Lerp(contadorBalas.color, Color.white, .1f);
+        contadorBalas.fontSize = Mathf.Lerp(contadorBalas.fontSize, 72, .1f);
+
     }
 
     // Update is called once per frame
@@ -56,13 +75,13 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))    //comprueba que esta pulsando la tecla "D"
         {
-            rb.AddForce(Vector2.right * speed);   // añade fuerza hacia la drch
+            rb.AddForce(Vector2.right * playerConfigData.MovementSpeed);   // añade fuerza hacia la drch
 
             spriteRenderer.flipX = true;     // gira al personaje cuando cambia de dirección
         }
         else if (Input.GetKey(KeyCode.A))    // comprueba que estas tocando la tecla "A"
         {
-            rb.AddForce(Vector2.left * speed);    // añade fuerza hacia la izq
+            rb.AddForce(Vector2.left * playerConfigData.MovementSpeed);    // añade fuerza hacia la izq
 
             spriteRenderer.flipX = false;     // gira al personaje cuando cambia de dirección
         }
@@ -89,8 +108,9 @@ public class PlayerControl : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {           
-            RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
-            if (informacionSuelo == true)
+            RaycastHit2D informacionSueloIzquierdo = Physics2D.Raycast(controladorSueloIzquierdo.position, Vector2.down, distancia, layerMaskSalto);
+            RaycastHit2D informacionSueloDerecho = Physics2D.Raycast(controladorSueloDerecho.position, Vector2.down, distancia, layerMaskSalto);
+            if ((informacionSueloIzquierdo == true)||(informacionSueloDerecho == true))
             {
                 jumping = true;
 
@@ -129,8 +149,9 @@ public class PlayerControl : MonoBehaviour
         {
             rb.AddForce(Vector2.down * fallForce);
 
-            RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
-            if (informacionSuelo == true)
+            RaycastHit2D informacionSueloIzquierdo = Physics2D.Raycast(controladorSueloIzquierdo.position, Vector2.down, distancia, layerMaskSalto);
+            RaycastHit2D informacionSueloDerecho = Physics2D.Raycast(controladorSueloDerecho.position, Vector2.down, distancia, layerMaskSalto);
+            if ((informacionSueloIzquierdo == true)|| (informacionSueloDerecho == true))
             {
                 saltosRestantes = 1;
             }
@@ -162,19 +183,28 @@ public class PlayerControl : MonoBehaviour
             hearts[1].gameObject.SetActive(true);
             hearts[2].gameObject.SetActive(true);
         }
+
+        //MUESTRA LA CANTIDAD DE BALAS QUE TIENE EL JUGADOR 
+        contadorBalas.text = CantidadBalas.ToString();
+
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(controladorSuelo.transform.position, controladorSuelo.transform.position + Vector3.down * distancia);
+        Gizmos.DrawLine(controladorSueloIzquierdo.transform.position, controladorSueloIzquierdo.transform.position + Vector3.down * distancia);
+        Gizmos.DrawLine(controladorSueloDerecho.transform.position, controladorSueloDerecho.transform.position + Vector3.down * distancia);
     }
+
+
 
     private bool EstaEnAire()
     {
-        RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskSalto);
+        RaycastHit2D informacionSueloIzquierdo = Physics2D.Raycast(controladorSueloIzquierdo.position, Vector2.down, distancia, layerMaskSalto);
+        RaycastHit2D informacionSueloDerecho = Physics2D.Raycast(controladorSueloDerecho.position, Vector2.down, distancia, layerMaskSalto);
 
-        return (informacionSuelo.collider == null);
+        return (informacionSueloIzquierdo.collider == null)&&(informacionSueloDerecho.collider == null);
+        
     } 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -197,9 +227,15 @@ public class PlayerControl : MonoBehaviour
             MuerteJugador.Invoke(this, EventArgs.Empty);
         }
 
+        if (collision.gameObject.CompareTag("+Bala"))
+        {
+            Destroy(collision.gameObject);
+            CantidadBalas += 5;
 
-
-
-
+            contadorBalas.color = Color.green;
+            contadorBalas.fontSize = 100;
+        }
     }
+
+    
 }
