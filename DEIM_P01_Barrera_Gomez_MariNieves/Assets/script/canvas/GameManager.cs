@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using Gestor = GestionEscenas.SceneManager;
+
 public class GameManager : MonoBehaviour
 {
-
+    private string sceneToLoad;
     public bool enPausa;
     public GameObject panelPausa;
 
@@ -52,6 +54,6 @@ public class GameManager : MonoBehaviour
 
     public void BotonStart()
     {
-        SceneManager.LoadScene("Level01");
+        Gestor.LoadScene("Level01");
     }
 }

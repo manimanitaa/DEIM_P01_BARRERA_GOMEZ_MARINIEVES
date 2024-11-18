@@ -20,7 +20,7 @@ public class Bala : MonoBehaviour
         //print("SI"+other.name);
         if (other.CompareTag("enemy"))
         {
-            print("FUNCIONA");
+            //print("FUNCIONA");
 
             other.GetComponent<enemigo>().TomarDanio(danio);
             Destroy(gameObject);

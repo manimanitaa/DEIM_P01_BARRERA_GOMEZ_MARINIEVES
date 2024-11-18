@@ -9,6 +9,7 @@ TagManager:
   - curacion
   - Bala
   - +Bala
+  - PIES
   layers:
   - Default
   - TransparentFX

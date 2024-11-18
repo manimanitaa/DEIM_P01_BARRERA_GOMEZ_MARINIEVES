@@ -20,7 +20,6 @@ public class COIN : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-           
             sistemaPuntos.SumarPuntos(cantidadPuntos);
             
             Destroy(gameObject);

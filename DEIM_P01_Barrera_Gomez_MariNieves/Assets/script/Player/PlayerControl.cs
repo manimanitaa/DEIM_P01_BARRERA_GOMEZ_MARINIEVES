@@ -230,10 +230,15 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.CompareTag("+Bala"))
         {
             Destroy(collision.gameObject);
-            CantidadBalas += 5;
+            CantidadBalas += 8;
 
             contadorBalas.color = Color.green;
             contadorBalas.fontSize = 100;
+        }
+
+        if (collision.gameObject.CompareTag("PIES"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 

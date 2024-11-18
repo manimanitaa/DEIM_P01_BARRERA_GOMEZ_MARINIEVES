@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
+using Gestor = GestionEscenas.SceneManager;
 
 public class LockController : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class LockController : MonoBehaviour
 
             if (inventory.key)
             {
-                SceneManager.LoadScene(sceneToLoad);
+                Gestor.LoadScene(sceneToLoad);
             }
 
         }
