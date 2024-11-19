@@ -9,10 +9,25 @@ public class COIN : MonoBehaviour
 
     [SerializeField] private SistemaPuntos sistemaPuntos;
 
+    [SerializeField] private Rigidbody2D rb;
+
+    public float fuerzaSalto = 1f;
+
+    public float fuerzaIzquierda = -2f; 
+    public float fuerzaDerecha = 2f;
+
+
+
 
     private void Start()
     {
         sistemaPuntos = GameObject.Find("SistemaPuntos").GetComponent<SistemaPuntos>();
+
+        float impulsoX = Random.Range(fuerzaIzquierda, fuerzaDerecha);  
+        float impulsoY = Random.Range(fuerzaSalto, fuerzaSalto + 1f); 
+
+        // Aplicar la fuerza en la dirección deseada
+        rb.AddForce(new Vector2(impulsoX, impulsoY), ForceMode2D.Impulse);
     }
 
 

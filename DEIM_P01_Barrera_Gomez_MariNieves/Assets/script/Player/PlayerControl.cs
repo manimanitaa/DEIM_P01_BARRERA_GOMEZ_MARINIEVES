@@ -236,11 +236,13 @@ public class PlayerControl : MonoBehaviour
             contadorBalas.fontSize = 100;
         }
 
-        if (collision.gameObject.CompareTag("PIES"))
+        if (collision.gameObject.CompareTag("CABEZA"))
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.transform.parent.gameObject);  // usando el transform accedo al enemigo en general
         }
     }
+
+    
 
     
 }

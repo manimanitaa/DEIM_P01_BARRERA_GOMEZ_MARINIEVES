@@ -9,6 +9,7 @@ TagManager:
   - curacion
   - Bala
   - +Bala
+  - CABEZA
   - PIES
   layers:
   - Default
