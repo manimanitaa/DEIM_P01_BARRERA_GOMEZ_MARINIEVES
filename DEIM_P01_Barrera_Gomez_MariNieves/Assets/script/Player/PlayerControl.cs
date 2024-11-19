@@ -32,6 +32,13 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] public TMPro.TextMeshProUGUI contadorBalas;
 
+
+    AudioManager audioManager;
+
+
+
+    
+
     public int CantidadBalas = 0;
 
     [Tooltip("fuerza caida del eprsonaje")]
@@ -187,6 +194,15 @@ public class PlayerControl : MonoBehaviour
         //MUESTRA LA CANTIDAD DE BALAS QUE TIENE EL JUGADOR 
         contadorBalas.text = CantidadBalas.ToString();
 
+    }
+
+    public void PlayFootStep()
+    {
+        if (rb.velocity.x != 0)
+        {
+            //Llamamos a la clase, y usando la variable instancia que es estatica reproducimos el sonido
+            AudioManager.PlayFootStepSound();
+        }
     }
 
     private void OnDrawGizmos()

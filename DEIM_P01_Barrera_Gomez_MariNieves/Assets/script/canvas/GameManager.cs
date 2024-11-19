@@ -11,9 +11,26 @@ public class GameManager : MonoBehaviour
     public bool enPausa;
     public GameObject panelPausa;
 
+    AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        string escenaActual = Gestor.GetActiveScene().name;
+
+        // Activar el AudioSource dependiendo de la escena activa
+        switch (escenaActual)
+        {
+            case "Inicio":
+                AudioManager.PlayMainMenuMusic();
+                break;
+
+            case "Level01":
+                AudioManager.PlayBGMSound();
+                break;
+
+            
+        }
     }
 
     // Update is called once per frame

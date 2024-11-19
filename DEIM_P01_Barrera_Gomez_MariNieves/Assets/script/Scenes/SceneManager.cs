@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 
 using SceneManagementUnity = UnityEngine.SceneManagement.SceneManager;
+using UnityEngine.SceneManagement;
 
 namespace GestionEscenas
 {
@@ -54,5 +55,15 @@ namespace GestionEscenas
            isLoadingScene = false;
 
         }
+        public static Scene GetActiveScene()
+        {
+
+            return SceneManagementUnity.GetActiveScene();
+
+        }
+
+        
     }
+
+
 }
