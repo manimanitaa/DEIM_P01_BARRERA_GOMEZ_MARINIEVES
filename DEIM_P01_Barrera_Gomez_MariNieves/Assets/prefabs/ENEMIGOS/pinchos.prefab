@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8408409245347974292}
   - component: {fileID: 2269095103257215413}
+  - component: {fileID: 3546875282542388290}
   - component: {fileID: 1631863346095313533}
   m_Layer: 0
   m_Name: pinchos
@@ -85,6 +86,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3546875282542388290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361804785305235308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6387a12b99730764a87a98b1c153a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 99999
+  moneda: {fileID: 0}
 --- !u!61 &1631863346095313533
 BoxCollider2D:
   m_ObjectHideFlags: 0

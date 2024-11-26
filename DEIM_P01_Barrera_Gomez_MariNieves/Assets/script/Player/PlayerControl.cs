@@ -62,8 +62,6 @@ public class PlayerControl : MonoBehaviour
 
         saltosRestantes = saltosMaximos;
 
-        playerConfigData.MovementSpeed = 3;
-
         animator.runtimeAnimatorController = playerConfigData.animatorController;
     }
 
@@ -225,9 +223,11 @@ public class PlayerControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+             print("ahora");
 
         if (collision.gameObject.CompareTag("enemy"))
         {
+            print("funciona");
             vidas -= 1;
         }
 

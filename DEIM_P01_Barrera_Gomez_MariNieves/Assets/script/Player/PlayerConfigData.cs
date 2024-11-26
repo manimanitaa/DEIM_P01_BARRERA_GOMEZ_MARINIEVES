@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerConfigData : ScriptableObject
 {
     [Tooltip("Velocidad de movimeinto del personaje")]
-    [Range(0,999)]
     [SerializeField] private float movementSpeed;
 
     public RuntimeAnimatorController animatorController;
