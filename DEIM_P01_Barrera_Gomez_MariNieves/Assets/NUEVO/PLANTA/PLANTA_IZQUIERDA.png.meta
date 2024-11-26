@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25cb1f9208e6ebb4eb54ca0d59e92986
+guid: c10458e01d214c9409550d6e05b7da4e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,24 +93,74 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NUBE (2)_0
+      name: pixil-frame-0 (17)_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd9627c0d6d8244c857a10d0a3586b9
+      internalID: 1603776788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bedcb85cbfa55142b789ae387bab643
+      internalID: -1973057642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 54
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce69890421101ec44ab319f15988f4a5
+      internalID: 1294644383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78a46e5b163fa744a5d06d3f7641b1a
-      internalID: -1032545796
+      spriteID: fbc945261e2bd7f46bf14b552f1bb6e9
+      internalID: -1462675810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NUBE (2)_1
+      name: pixil-frame-0 (17)_4
       rect:
         serializedVersion: 2
         x: 18
@@ -145,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8405ab6e04b1806428c5a479f8e75e2b
-      internalID: -1596353715
+      spriteID: 0450d0a3cb8f30c449d88eea3a8a6a73
+      internalID: -2056481829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NUBE (2)_2
+      name: pixil-frame-0 (17)_5
       rect:
         serializedVersion: 2
         x: 36
@@ -166,8 +216,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e8c0fdcc33ae9a42a3a00b3861e6937
-      internalID: -846820659
+      spriteID: 54a63b1bc1969444d81d3279da0ba37c
+      internalID: 1020780617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 36
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188d4adf73c79e049a9e854f58b7a53e
+      internalID: -1686744422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 18
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e162821ed604b40be400463a5cb288
+      internalID: -136923476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixil-frame-0 (17)_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab54ab5cfd8d84498d594393444490b
+      internalID: 1700508059
       vertices: []
       indices: 
       edges: []
@@ -183,9 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NUBE (2)_0: -1032545796
-      NUBE (2)_1: -1596353715
-      NUBE (2)_2: -846820659
+      pixil-frame-0 (17)_0: 1603776788
+      pixil-frame-0 (17)_1: -1973057642
+      pixil-frame-0 (17)_2: 1294644383
+      pixil-frame-0 (17)_3: -1462675810
+      pixil-frame-0 (17)_4: -2056481829
+      pixil-frame-0 (17)_5: 1020780617
+      pixil-frame-0 (17)_6: -1686744422
+      pixil-frame-0 (17)_7: -136923476
+      pixil-frame-0 (17)_8: 1700508059
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
