@@ -25,9 +25,10 @@ public class GameOver : MonoBehaviour
 
     private void ActivarMenu(object sender, EventArgs e)
     {
-        menuGameOver.SetActive(true);
 
-        
+        Time.timeScale = 0f;
+        menuGameOver.SetActive(true);
+                
     }
 
     public void BotonStart()

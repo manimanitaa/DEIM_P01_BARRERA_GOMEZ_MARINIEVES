@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             if (enPausa == false)
             {
+                Time.timeScale = 0f;
                 panelPausa.SetActive(true);
                 enPausa = true;
             }
@@ -73,4 +74,25 @@ public class GameManager : MonoBehaviour
     {
         Gestor.LoadScene("Level01");
     }
+
+    public void BotonFuera()
+    {
+        Application.Quit();
+    }
+
+    public void BotonInformacion()
+    {
+        Gestor.LoadScene("Informacion");
+    }
+
+    public void BotonControls()
+    {
+        Gestor.LoadScene("CONTROLS");
+    }
+
+    public void BotonVolver()
+    {
+        Gestor.LoadScene("Inicio");
+    }
+
 }
