@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_0
+      name: PLANTA_DERECHA_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d5492570aefef14b8c50f01c82b7ea4
-      internalID: 963563355
+      spriteID: abcfde605ffe7e043b3002bc86e0ad25
+      internalID: -487970656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_1
+      name: PLANTA_DERECHA_1
       rect:
         serializedVersion: 2
         x: 18
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 068bc2aed7e72e144ab19ac874797e14
-      internalID: -514100226
+      spriteID: e21fda7a0f4dada4cb7d0c53bdb773f6
+      internalID: 2104928369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_2
+      name: PLANTA_DERECHA_2
       rect:
         serializedVersion: 2
         x: 36
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c31d9d1a5be6de14e9dfc42d496fcd7f
-      internalID: -2123471061
+      spriteID: 280084263df15624ba4504fc3c6239bd
+      internalID: 956887749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_3
+      name: PLANTA_DERECHA_3
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c544e8a1016489e4f99651faa55c9e52
-      internalID: 1704773165
+      spriteID: 4a9baead93f1f9444856d5cdee721c18
+      internalID: 1734905159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_4
+      name: PLANTA_DERECHA_4
       rect:
         serializedVersion: 2
         x: 18
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3485b19cd1d5044a8fca1ca09ccca9
-      internalID: 1274866334
+      spriteID: 6ecafb8c6e71a48489c99d8a86c64385
+      internalID: -2105912296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_5
+      name: PLANTA_DERECHA_5
       rect:
         serializedVersion: 2
         x: 36
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7f9a4022a59c844eb0af16364ea220e
-      internalID: 792829643
+      spriteID: da17cf05e12be524ebc52e46ddba9281
+      internalID: 1183802124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_6
+      name: PLANTA_DERECHA_6
       rect:
         serializedVersion: 2
         x: 54
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14262103fe8cc17408577df00953efec
-      internalID: -426352286
+      spriteID: 55e112ba31c288b4394b58aac5a2f3ab
+      internalID: -265749399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_7
+      name: PLANTA_DERECHA_7
       rect:
         serializedVersion: 2
         x: 0
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c50bab83835b55418625ee9a3a11e63
-      internalID: 32119316
+      spriteID: b73544fc94cb2034cae67f9e71defa79
+      internalID: -1886839619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (18)_8
+      name: PLANTA_DERECHA_8
       rect:
         serializedVersion: 2
         x: 0
@@ -279,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afc44fa17d09ac045bb4dc4ffef2ac6f
-      internalID: 506842347
+      spriteID: a53f685cb460b154d99d3ae0e86ea755
+      internalID: 1156503734
       vertices: []
       indices: 
       edges: []
@@ -296,15 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pixil-frame-0 (18)_0: 963563355
-      pixil-frame-0 (18)_1: -514100226
-      pixil-frame-0 (18)_2: -2123471061
-      pixil-frame-0 (18)_3: 1704773165
-      pixil-frame-0 (18)_4: 1274866334
-      pixil-frame-0 (18)_5: 792829643
-      pixil-frame-0 (18)_6: -426352286
-      pixil-frame-0 (18)_7: 32119316
-      pixil-frame-0 (18)_8: 506842347
+      PLANTA_DERECHA_0: -487970656
+      PLANTA_DERECHA_1: 2104928369
+      PLANTA_DERECHA_2: 956887749
+      PLANTA_DERECHA_3: 1734905159
+      PLANTA_DERECHA_4: -2105912296
+      PLANTA_DERECHA_5: 1183802124
+      PLANTA_DERECHA_6: -265749399
+      PLANTA_DERECHA_7: -1886839619
+      PLANTA_DERECHA_8: 1156503734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 115136456871022419}
   - component: {fileID: 7902110366994792551}
   - component: {fileID: 3541846353032982302}
+  - component: {fileID: -6083076918342437311}
   m_Layer: 0
   m_Name: CargaDeBalas
   m_TagString: +Bala
@@ -130,3 +131,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9090633, y: 2.0287075}
   m_EdgeRadius: 0
+--- !u!114 &-6083076918342437311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8162798323806586406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1661275f40e168d46b13e10816a20b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsAudioSource: {fileID: 0}
+  BGMAudioSource: {fileID: 0}
+  menuAudioSource: {fileID: 0}
+  stepAudioClip: {fileID: 0}
+  musicBFMAudioClip: {fileID: 0}
+  musicMenuAudioClip: {fileID: 0}
+  DisparoClip: {fileID: 0}
+  CarneClip: {fileID: 0}
+  BotiquinClip: {fileID: 8300000, guid: 8815d7fb6bed1b3489814814a1fc60ec, type: 3}

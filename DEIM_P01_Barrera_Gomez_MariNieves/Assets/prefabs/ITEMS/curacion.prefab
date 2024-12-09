@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6278460675904930966}
   - component: {fileID: 239046534868937987}
   - component: {fileID: 5244821774305645094}
+  - component: {fileID: -7593015368400230758}
   m_Layer: 0
   m_Name: curacion
   m_TagString: curacion
@@ -133,3 +134,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e93b72cfaaa3b4a90b88b9578af783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7593015368400230758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118302359574590449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1661275f40e168d46b13e10816a20b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsAudioSource: {fileID: 0}
+  BGMAudioSource: {fileID: 0}
+  menuAudioSource: {fileID: 0}
+  stepAudioClip: {fileID: 0}
+  musicBFMAudioClip: {fileID: 0}
+  musicMenuAudioClip: {fileID: 0}
+  DisparoClip: {fileID: 0}
+  CarneClip: {fileID: 0}
+  BotiquinClip: {fileID: 8300000, guid: 8815d7fb6bed1b3489814814a1fc60ec, type: 3}

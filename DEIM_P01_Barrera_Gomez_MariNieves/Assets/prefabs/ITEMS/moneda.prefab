@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6866922252128012054}
   - component: {fileID: 7921945080997697132}
   - component: {fileID: 5482108650192912354}
+  - component: {fileID: 469919698574770798}
+  - component: {fileID: 616538643439740717}
   m_Layer: 0
   m_Name: moneda
   m_TagString: Untagged
@@ -213,3 +215,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0092616, y: 1.0009978}
   m_EdgeRadius: 0
+--- !u!114 &469919698574770798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6134846096241301046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850ffa1a8d841854b8074825bfcadc5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &616538643439740717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6134846096241301046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1661275f40e168d46b13e10816a20b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsAudioSource: {fileID: 0}
+  BGMAudioSource: {fileID: 0}
+  menuAudioSource: {fileID: 0}
+  stepAudioClip: {fileID: 0}
+  musicBFMAudioClip: {fileID: 0}
+  musicMenuAudioClip: {fileID: 0}
+  DisparoClip: {fileID: 0}
+  CarneClip: {fileID: 8300000, guid: 8113e3899e1a7394ebd2b50d8bf25437, type: 3}

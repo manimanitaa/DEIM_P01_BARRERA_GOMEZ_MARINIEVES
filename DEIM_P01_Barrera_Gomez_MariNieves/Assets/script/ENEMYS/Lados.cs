@@ -11,7 +11,9 @@ public class Lados : MonoBehaviour
 
     [SerializeField] private float distancia;
 
-    private bool movimientoDerecha;
+    [SerializeField] private bool movimientoDerecha;
+
+    [SerializeField] private LayerMask layerMaskMovimiento;
 
     private Rigidbody2D rb;
 
@@ -24,7 +26,9 @@ public class Lados : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia);  
+        RaycastHit2D informacionSuelo = Physics2D.Raycast(controladorSuelo.position, Vector2.down, distancia, layerMaskMovimiento);  
+
+
 
         rb.velocity = new Vector2 (velocidad, rb.velocity.y);
 
@@ -36,9 +40,9 @@ public class Lados : MonoBehaviour
 
     private void Girar()
     {
-        movimientoDerecha =! movimientoDerecha;
+        movimientoDerecha = !movimientoDerecha;
 
-        transform.eulerAngles = new Vector3 (0,transform.eulerAngles.y + 180,0);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180,0);
 
         velocidad *= -1;
     }

@@ -35,9 +35,8 @@ public class PlayerControl : MonoBehaviour
 
     AudioManager audioManager;
 
-
-
-    
+    [SerializeField] private AudioClip saltoSonido;
+   
 
     public int CantidadBalas = 0;
 
@@ -60,6 +59,9 @@ public class PlayerControl : MonoBehaviour
     {
         Debug.Log("se ejecuta Stat");
 
+       
+
+
         saltosRestantes = saltosMaximos;
 
         animator.runtimeAnimatorController = playerConfigData.animatorController;
@@ -78,6 +80,10 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+
+       // if(GameOver.FindObjectOfType.IsGamePaused)
+           // return;
+
         if (Input.GetKey(KeyCode.D))    //comprueba que esta pulsando la tecla "D"
         {
             rb.AddForce(Vector2.right * playerConfigData.MovementSpeed);   // añade fuerza hacia la drch
@@ -122,6 +128,8 @@ public class PlayerControl : MonoBehaviour
                 jumptime = 0;
 
                 saltosRestantes = 1;
+
+                ControladorSonido.Instance.EjecutarSonido(saltoSonido);
 
                 Debug.Log("inicio del salto");
             }

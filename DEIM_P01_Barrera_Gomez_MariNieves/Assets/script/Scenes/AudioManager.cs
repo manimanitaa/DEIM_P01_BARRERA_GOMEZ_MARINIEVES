@@ -30,6 +30,15 @@ public class AudioManager : MonoBehaviour
     [Tooltip("Referencia al Audio Clip de la música de fondo del menu")]
     [SerializeField] private AudioClip musicMenuAudioClip;
 
+    [Tooltip("Referencia al Audio Clip de la música de disparo")]
+    [SerializeField] private AudioClip DisparoClip;
+
+    [Tooltip("Referencia al Audio Clip de la música de disparo")]
+    [SerializeField] private AudioClip CarneClip;
+
+    [Tooltip("Referencia al Audio Clip de la música de disparo")]
+    [SerializeField] private AudioClip BotiquinClip;
+
     private void Awake()
     {
         if (instance == null)
@@ -88,6 +97,23 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ControladorSonido.Instance.EjecutarSonido(CarneClip);
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("Player"))
+        {
+            ControladorSonido.Instance.EjecutarSonido(BotiquinClip);
+            Destroy(gameObject);
+        }
+    }
+
+
 }
 
 

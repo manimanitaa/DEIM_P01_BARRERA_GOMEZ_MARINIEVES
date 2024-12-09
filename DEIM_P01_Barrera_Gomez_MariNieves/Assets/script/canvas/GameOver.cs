@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using Gestor = GestionEscenas.SceneManager;
 
 
 public class GameOver : MonoBehaviour
@@ -11,6 +12,7 @@ public class GameOver : MonoBehaviour
     [SerializeField] private GameObject menuGameOver;
 
     private PlayerControl playerControl;
+
 
     private void Start()
     {
@@ -25,21 +27,19 @@ public class GameOver : MonoBehaviour
 
     private void ActivarMenu(object sender, EventArgs e)
     {
-
-        Time.timeScale = 0f;
         menuGameOver.SetActive(true);
-                
+        Time.timeScale = 0f;
     }
 
     public void BotonStart()
     {
-        SceneManager.LoadScene("Level01");
+        Gestor.LoadScene("Level01");
     }
 
-    public void BotonSalir()
+    public void BotonInicio()
     {
-        SceneManager.LoadScene("Inicio");
+        Gestor.LoadScene("inicio");
     }
 
-    
+
 }
