@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ca911d65dc740489e07343fd6b1965, type: 3}
   m_Name: Player 02
   m_EditorClassIdentifier: 
-  movementSpeed: 20
+  movementSpeed: 8
   animatorController: {fileID: 9100000, guid: b51d16268b26b4545bd18c284f84ca2b, type: 2}

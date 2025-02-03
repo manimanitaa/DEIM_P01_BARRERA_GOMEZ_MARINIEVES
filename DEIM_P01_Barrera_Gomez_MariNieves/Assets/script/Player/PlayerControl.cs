@@ -86,13 +86,13 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))    //comprueba que esta pulsando la tecla "D"
         {
-            rb.AddForce(Vector2.right * playerConfigData.MovementSpeed);   // añade fuerza hacia la drch
+            rb.velocity= new Vector2( playerConfigData.MovementSpeed, rb.velocity.y);   // añade fuerza hacia la drch
 
             spriteRenderer.flipX = true;     // gira al personaje cuando cambia de dirección
         }
         else if (Input.GetKey(KeyCode.A))    // comprueba que estas tocando la tecla "A"
         {
-            rb.AddForce(Vector2.left * playerConfigData.MovementSpeed);    // añade fuerza hacia la izq
+            rb.velocity = new Vector2 (- playerConfigData.MovementSpeed, rb.velocity.y);    // añade fuerza hacia la izq
 
             spriteRenderer.flipX = false;     // gira al personaje cuando cambia de dirección
         }
